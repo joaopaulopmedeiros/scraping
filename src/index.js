@@ -9,7 +9,7 @@ nunjucks.configure('src/views', {
     noCache: true,
 })
 
-app.use(express.urlencoded());
+app.use(express.urlencoded({extended: true}));
 app.use(routes);
 app.use(express.static("public/images"));
 
