@@ -11,6 +11,6 @@ nunjucks.configure('src/views', {
 
 app.use(express.urlencoded({extended: true}));
 app.use(routes);
-app.use(express.static("public/images"));
+app.use(express.static("public"));
 
 app.listen(3333);

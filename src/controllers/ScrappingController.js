@@ -21,7 +21,7 @@ module.exports = {
           
             await browser.close();
             
-            return res.redirect(`/example.png`);
+            return res.redirect(`/images/example.png`);
         } catch (error) {
             console.log(error)
         }
